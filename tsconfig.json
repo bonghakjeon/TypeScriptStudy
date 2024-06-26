@@ -1,0 +1,19 @@
+// 타입스크립트 진짜 쉽게 설명해줌 | 이거보고도 이해 안되면 집가라
+// 유튜브 참고 URL - https://youtu.be/GHHUjITelsA?si=m_Ej9T0GISPAkDTB
+
+// 타입스크립트 코드에서 자바스크립트 코드 변환을 하기 위한 설정값을 json 형식의 데이터로 넣어 줌.
+
+// TODO : tsconfig.json에 필요한 설정값 구현 (2024.06.25 jbh)
+// 참고 URL - https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+{
+    "compilerOptions": {
+      "outDir": "dist",       // 명령어 "tsc index.js" 실행결과 생성되는 자바스크립트 파일이 생성되는 출력 디렉토리(outDir) 경로 설정 
+      "target": "es6",        // 자바스크립트 코드 변환시 "es6" 버전으로 변환
+      "module": "commonjs",   // 어떤 모듈 쓸지
+      "lib": ["es6", "dom"],  // 어떤 라이브러리 쓸지(자바스크립트 , "dom" 필요 없다면 제외 처리) 
+
+    "sourceMap": true
+    },
+    // "include": ["src"],
+    // "exclude": ["**/node_modules", "**/.*/"],
+}

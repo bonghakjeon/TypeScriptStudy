@@ -23,7 +23,7 @@ function showItemsString(arr : string[]) {
 
 
 showItems([1, 2, 3]);
-showItems(1, 2, 3);
+// showItems(1, 2, 3);
 
-showItems2([1, 2, 3]);
-showItems2(1, 2, 3);
+showItemsString(["1", "2", "3"]);
+// showItemsString("1", "2", "3");
